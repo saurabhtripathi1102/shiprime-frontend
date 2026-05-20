@@ -6,7 +6,7 @@ export const siteConfig = {
   supportEmail: "support@shiprime.com",
   supportPhone: "+91 80 6900 6900",
   urls: {
-    dashboard: "/app",
+    dashboard: "/dashboard",
     pricing: "/pricing",
     login: "/login",
     signup: "/signup",
