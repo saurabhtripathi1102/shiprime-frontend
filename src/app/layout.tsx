@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono, Fraunces } from "next/font/google";
 import { siteConfig } from "@/config/site";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "sonner";
+import { Providers } from "@/components/providers";
 import "./globals.css";
 
 const inter = Inter({
@@ -43,15 +44,17 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <TooltipProvider>
-          {children}
-          <Toaster 
-            position="top-right" 
-            toastOptions={{
-              className: "bg-card text-foreground border-border font-sans",
-            }}
-          />
-        </TooltipProvider>
+        <Providers>
+          <TooltipProvider>
+            {children}
+            <Toaster 
+              position="top-right" 
+              toastOptions={{
+                className: "bg-card text-foreground border-border font-sans",
+              }}
+            />
+          </TooltipProvider>
+        </Providers>
       </body>
     </html>
   );
