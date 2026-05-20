@@ -1,0 +1,255 @@
+# =============================================================================
+# ShipTrust Frontend — .gitignore
+# Next.js 14 + TypeScript + Tailwind + shadcn/ui
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Dependencies
+# -----------------------------------------------------------------------------
+node_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+.yarn/install-state.gz
+jspm_packages/
+bower_components/
+
+
+# -----------------------------------------------------------------------------
+# Next.js build output
+# -----------------------------------------------------------------------------
+.next/
+out/
+build/
+dist/
+.vercel/
+.turbo/
+.swc/
+
+
+# -----------------------------------------------------------------------------
+# Production / build artifacts
+# -----------------------------------------------------------------------------
+*.tsbuildinfo
+next-env.d.ts
+.cache/
+.parcel-cache/
+
+
+# -----------------------------------------------------------------------------
+# Environment variables (NEVER commit these)
+# -----------------------------------------------------------------------------
+.env
+.env*.local
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Allow example/template env files so others know what variables exist
+!.env.example
+!.env.sample
+
+
+# -----------------------------------------------------------------------------
+# Logs
+# -----------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.yarn-integrity
+
+
+# -----------------------------------------------------------------------------
+# Testing & coverage
+# -----------------------------------------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+playwright/.cache/
+/blob-report/
+
+
+# -----------------------------------------------------------------------------
+# IDE & editor files
+# -----------------------------------------------------------------------------
+
+# VS Code — keep shared settings folder but ignore personal overrides
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.vscode-test/
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*.swn
+*~
+\#*\#
+.\#*
+
+# Cursor / Windsurf / Antigravity AI IDE caches
+.cursor/
+.windsurf/
+.antigravity/
+
+
+# -----------------------------------------------------------------------------
+# OS files
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+
+# -----------------------------------------------------------------------------
+# Package manager files (keep only the one you use)
+# Comment out lines for the manager you ARE using.
+# -----------------------------------------------------------------------------
+# If using npm, ignore yarn/pnpm lockfiles:
+# yarn.lock
+# pnpm-lock.yaml
+
+# If using pnpm, ignore others:
+# package-lock.json
+# yarn.lock
+
+# If using yarn, ignore others:
+# package-lock.json
+# pnpm-lock.yaml
+
+
+# -----------------------------------------------------------------------------
+# AI tool / agent caches and history
+# -----------------------------------------------------------------------------
+.claude/
+.aider*
+.continue/
+.cline/
+.roo/
+.copilot/
+
+
+# -----------------------------------------------------------------------------
+# Secrets, certs, credentials
+# -----------------------------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+secrets.json
+secrets.yml
+secrets.yaml
+credentials.json
+config.local.json
+
+
+# -----------------------------------------------------------------------------
+# Database files (in case you add local sqlite for prototyping)
+# -----------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+
+# -----------------------------------------------------------------------------
+# Misc temp / scratch
+# -----------------------------------------------------------------------------
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.backup
+*.orig
+.history/
+
+# Local notes / TODOs
+NOTES.md
+TODO.md
+SCRATCH.md
+notes/
+
+
+# -----------------------------------------------------------------------------
+# Generated docs / screenshots (uncomment if you do NOT want them in repo)
+# -----------------------------------------------------------------------------
+# /docs/screenshots/
+# /docs/generated/
+
+
+# -----------------------------------------------------------------------------
+# Storybook (if you add it later)
+# -----------------------------------------------------------------------------
+storybook-static/
+
+
+# -----------------------------------------------------------------------------
+# Bundle analysis
+# -----------------------------------------------------------------------------
+.next/analyze/
+analyze/
+stats.json
+
+
+# -----------------------------------------------------------------------------
+# Sentry / monitoring (if integrated later)
+# -----------------------------------------------------------------------------
+.sentryclirc
+
+
+# -----------------------------------------------------------------------------
+# Misc — uncomment if you need to ignore specific files
+# -----------------------------------------------------------------------------
+# public/uploads/
+# *.zip
+# *.tar.gz
+# Agent-generated files (not for version control)
+AGENTS.md
+ui_instructions.md
